@@ -130,12 +130,12 @@ nav ul li a:hover {
 .actividad-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 5px;
 }
 
 
 .actividad-item {
-    background-color: white;
+    /* background-color: white; */
     padding: 10px;
     border-radius: 5px;
     position: relative; /* Necesario para que el texto pueda posicionarse sobre la imagen */
@@ -174,3 +174,11 @@ nav ul li a:hover {
 .actividad-item a:hover {
     color: #f48fb1; /* Cambia el color de fondo cuando se pasa el cursor por encima */
 }
+
+
+@media (max-width: 768px) {
+    .actividad-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas más pequeñas */
+    }
+}
+
