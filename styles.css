@@ -6,8 +6,23 @@ body {
     box-sizing: border-box;
 }
 
+body, p {
+    font-family: 'Poppins', sans-serif; /* Fuente moderna para el cuerpo del texto */
+    font-size: 1rem;
+    color: #555; /* Color suave para el texto */
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+h2 {
+    font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
+    font-size: 2.5rem; /* Tamaño del texto del título */
+    color: #333; /* Color oscuro para el título */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px;
+}
+
 header {
-    background-color: #333;
+    background-color: #f4c2c2;
     padding: 10px 0;
 }
 
@@ -41,7 +56,7 @@ nav ul li {
 
 nav ul li a {
     font-size: 16px; /* Ajusta el tamaño de la fuente según lo que desees */
-    color: #fff; /* Mantiene el color blanco para los enlaces */
+    color: #6b6b83; /* Mantiene el color blanco para los enlaces */
     font-weight: bold;
     /* text-transform: uppercase; Pone el texto en mayúsculas */
     text-decoration: none; /* Elimina el subrayado del enlace */
@@ -102,7 +117,13 @@ nav ul li a:hover {
 }
 
 .actividad h2 {
+    /* font-family: 'Playfair Display';
     font-size: 2rem;
+    margin-bottom: 20px; */
+    font-family: 'Lora';
+    font-size: 3rem;
+    color: #c71585;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -134,26 +155,22 @@ nav ul li a:hover {
 }
 
 .actividad-item a {
-    /* display: block;
-    margin-top: 10px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: #333;
-    font-weight: bold; */
+
     position: absolute; /* Para superponer el texto sobre la imagen */
+    font-family: 'Lora', serif;
     top: 50%; /* Centra verticalmente el texto */
     left: 50%; /* Centra horizontalmente el texto */
     transform: translate(-50%, -50%); /* Ajusta la posición para centrar el texto */
     color: white; /* Color del texto */
-    font-size: 24px; /* Tamaño del texto */
+    font-size: 1.5rem; /* Tamaño del texto */
     font-weight: bold; /* Texto en negrita */
     background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente más ligero */
     padding: 5px 10px; /* Reduce el espaciado interno del texto */
     text-transform: uppercase; /* Texto en mayúsculas */
     text-decoration: none; /* Elimina el subrayado del enlace */
-    transition: background-color 0.3s ease; /* Transición suave al hacer hover en el texto */
+    transition: color 0.3s ease; /* Transición suave al hacer hover en el texto */
 }
 
 .actividad-item a:hover {
-    background-color: rgba(0, 0, 0, 0.5); /* Cambia el color de fondo cuando se pasa el cursor por encima */
+    color: #f48fb1; /* Cambia el color de fondo cuando se pasa el cursor por encima */
 }
